@@ -1,0 +1,397 @@
+body{
+		font-family: 'segoe ui';	
+        margin: 0px;
+        padding: 0px;
+	}
+
+    .nav{
+		height:60px;
+		width:100%;
+		background:rgb(22, 11, 237);
+		
+		border-radius:0px;
+        display: flex;
+		margin-top: 0px;
+	}
+
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	.nav .nav-header{
+	     width: 100%;
+		 margin-top: 0px;
+	}
+
+	.nav .nav-header .nav-title{
+		font-size: 22px;
+		color: #ffffff;
+        padding: 15px;
+		font-size:25px;
+		font-family: gilroy-bold;
+		text-align: center;
+		
+	}
+
+
+.nav #nav-check{
+	display: none;
+
+}
+
+.nav .nav-btn label{
+	display: inline-block;
+	width:30px;
+	height:30px;
+	padding: 8px;
+	margin:5px;
+	border-radius: 10px;
+
+
+}
+
+.nav .nav-btn label span{
+	display: block;
+	width:30px;
+	height:6px;
+	border-top: 2px solid #ffffff;
+
+}
+
+.nav .nav-links{
+	position:absolute;
+	display: inline-block;
+	width:100%;
+	border-radius: 0px;
+	background:rgb(255, 255, 255);
+	height:0px;
+	transition: all 0.3s ease-in;
+	overflow-y: hidden;
+	top:60px;
+	left: 0px;
+	box-shadow: rgba(169, 169, 169, 0.726) 2px 10px 20px;
+}
+
+.nav #nav-check:not(:checked) ~ .nav-links{
+	height:0px;
+    width:0%;
+}
+.nav #nav-check:checked ~ .nav-links{
+	height:calc(100% - 60px);
+	overflow-x: auto;
+    width: 20%;
+}
+
+
+
+.nav .nav-links .logo{
+	border-bottom: 2px solid rgb(32, 0, 128);
+}
+.nav .nav-links .logo img{
+	width:70px;
+	height:70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10px;
+	border-radius: 100%;
+}
+
+.nav .nav-links .logo h2{
+	text-align: center;
+	font-size:20px;
+}
+
+.nav .nav-links a{
+	display: block;
+	color:rgb(0, 0, 0);
+	font-weight: 600;
+	font-size:15px;
+	margin:20px;
+	text-decoration: none;
+}
+.nav .nav-links a:hover{
+	color: #2003ff;
+}
+
+.nav .nav-links h3{
+	font-size:18px;
+	border-top: 2px solid rgb(32, 0, 128);
+	padding-left:10px;
+}
+
+@media screen and (max-width: 600px) {
+	.nav #nav-check:not(:checked) ~ .nav-links{
+		height:0px;
+		width:0%;
+	}
+	.nav #nav-check:checked ~ .nav-links{
+		height:calc(100vh - 60px);
+		overflow-x: auto;
+		width:80%;
+	}
+
+	.nav .nav-links .logo{
+		border-bottom: 2px solid rgb(32, 0, 128);
+	}
+	.nav .nav-links .logo img{
+		width:50px;
+		height:50px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:10px;
+		border-radius: 100%;
+	}
+	
+	.nav .nav-links .logo h2{
+		text-align: center;
+		font-size:15px;
+	}
+	
+	.nav .nav-links a{
+		display: block;
+		color:rgb(0, 0, 0);
+		font-weight: 600;
+		font-size:14px;
+		margin:20px;
+		text-decoration: none;
+	}
+	.nav .nav-links h3{
+		font-size:15px;
+		border-top: 2px solid rgb(32, 0, 128);
+		padding-left:10px;
+	}
+
+}
+
+.dropbtn {
+	color: white;
+	padding:14px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	
+  }
+
+
+  .dropdown {
+	position:relative;
+	display: inline-block;
+	margin-left:0%;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position:absolute;
+	background-color: #ffffff;
+	min-width: 130px;
+	overflow: auto;
+	box-shadow: rgba(169, 169, 169, 0.726) 2px 10px 20px;
+	z-index: 1;
+	margin-left:-90px;
+	margin-right: 10px;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+.container{
+	width: 85%;
+    margin: 70px auto;
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 5px;
+	border: 3px solid #19fb20;
+	box-shadow: rgba(169, 169, 169, 0.726) 2px 10px 20px;
+}
+.container h2{
+	text-align: center;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius:5px;
+	border: 2px solid rgb(103, 12, 230);
+}
+
+
+select{
+	width: 100%;
+	padding:12px 20px;
+	margin:5px 0px;
+	box-sizing: border-box;
+	border-radius:5px;
+	border: 2px solid rgb(103, 12, 230);
+}
+
+
+.container-btn, .container-link-btn{
+	display: inline-flex;
+	width: 100%;
+}
+
+.button {
+	margin:10px;
+	background-color: #ff03c0;
+	color: white;
+	padding:10px 20px;
+	border-radius:5px;
+	border: 2px solid rgb(103, 12, 230);
+	
+	cursor: pointer;
+	width: 100%;
+}
+#button:active{
+	background-color: #ddd;
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+.container-btn select{
+	width: 100%;
+	padding:5px 10px;
+	margin:5px 0px;
+	box-sizing: border-box;
+	border-radius:5px;
+	border: 2px solid rgb(103, 12, 230);
+}
+
+.header {
+	text-align: center;
+	padding: 20px;
+	font-size: 28px;
+	color: #333;
+}
+
+.table {
+	width:100%;
+	border-collapse: collapse;
+	margin:20px auto;
+	border-radius: 5px;
+}
+
+.table th, .table td {
+	border: 0px;
+
+	padding: 8px;
+	text-align: left;
+	background-color: rgb(22, 11, 237);
+}
+
+.table th {
+	color: white;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	
+}
+.table td {
+	color: white;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+}
+
+.container-link-btn .button {
+	margin:10px;
+	background-color: #2003ff;
+	color: white;
+	padding:10px 10px;
+	border-radius:5px;
+	cursor: pointer;
+	width: 100%;
+}
+.button .active{
+	background-color: #666;
+	color: white;
+}
+footer{
+	border-top: 2px solid black;
+	padding: 10px;
+	box-shadow: rgba(169, 169, 169, 0.619) 2px -10px 20px;
+}
+.url-links{
+	display: inline-flex;
+	width: 100%;
+	margin:0px 30px;
+}
+
+.url-links .url{
+ width:50%;
+}
+.url-links .user{
+	float: right;
+}
+
+@media only screen and (max-width: 600px) {
+	.container{
+		width: 85%;
+		margin: 10px auto;
+		background-color: #ffffff;
+		padding: 20px;
+		border-radius: 5px;
+		border: 3px solid #19fb20;
+		box-shadow: rgba(169, 169, 169, 0.726) 2px 10px 20px;
+	}
+
+	
+.container-btn, .container-link-btn{
+	display: inline-flex;
+	width: 100%;
+}
+
+
+.container-link-btn .button {
+	margin:3px;
+	background-color: #2003ff;
+	color: white;
+	padding:6px 3px;
+	border-radius:2px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.container-btn select{
+	width: 100%;
+	padding:5px 10px;
+	margin:5px 0px;
+	box-sizing: border-box;
+	border-radius:5px;
+	border: 2px solid rgb(103, 12, 230);
+}
+
+.url-links{
+	display: inline-flex;
+	width: 100%;
+	margin:0px 10px;
+}
+
+.url-links .url{
+ width:70%;
+}
+
+.url-links .url h4{
+	font-size:13px;
+}
+.url-links .user{
+	float: right;
+}
+
+}
+
