@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="das-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+
+
+<body>
+
+    <div id="myHeader" class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+        </div>
+
+
+          <div class="nav-header">
+            <div class="nav-title">
+             ADSFLY
+            </div>
+          </div>
+
+          <div class="dropdown">
+          <img  onclick="myFunction()" class="dropbtn" src="favicon-32x32.png">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="dashboard.html">MyProfile</a>
+              <a href="admin.html">Admin Panel</a>
+              <a href="#contact">Youtube</a>
+              <a href="#contact">LogOut</a>
+            </div>
+          </div>
+        
+         
+
+        <div id="myHeader" class="nav-links">
+
+        <div class="logo">
+            <img src="bg-shorten-desktop.svg">
+            <h2>username</h2>
+
+        </div>
+
+        <div class="links">
+          
+            <a href="#"><i class="fa-solid fa-landmark"></i> Home</a>
+            <a href="#"><i class="fa-regular fa-bell"></i> Notifications</a>
+            <a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i> Earn Money</a>
+            <a href="#"><i class="fa-solid fa-headset"></i> Support Team</a>
+            <a href="#"><i class="fa-solid fa-link"></i> Manage Links</a>
+            <a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Other</a>
+            <a href="#"><i class="fa-solid fa-comments-dollar"></i> Referrals Earn</a>
+            <a href="#"><i class="fa-solid fa-money-check-dollar"></i> Payment Profile</a>
+          
+        </div>
+
+        <div class="links">
+            <h3>My Account Settings</h3>
+            <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+            <a href="#"><i class="fa-solid fa-lock"></i> Change Password</a>
+            <a href="#"><i class="fa-solid fa-user-tie"></i> Access & Admin</a>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="article">
+    <div class="container">  
+<h4 class="text" id="para">Please Wait 10 seconds</h4>
+</div>
+
+    <p>If you're going to use the Node.js environment for the first time in back-end JavaScript development, you need the right guidance to run it on your computer. We've curated a step-by-step guide on how to run Node.js on Windows, macOS, and Linux, along with other necessary details. Have a look. 
+
+36.19% of the skilled developers are using Node.js today for server-side scripting and developing responsive websites that run user requests on the web server and not on the client side or web browser. This not only reduces the loading time of any website by 50-60% but also increases the overall performance of all types of applications by 50%. 
+
+That's why global companies like Amazon, eBay, Netflix, Reddit, Tumblr, LinkedIn, PayPal, etc., use Node.js, and the number is increasing every day. Hence, you can understand the growing demand for a full-stack JavaScript developer; learning the Node.js program is the first step toward becoming one. Let's get started! 
+<br>
+What is Node.js?
+Node.js is an open-source JavaScript runtime environment designed on Chrome’s V8 JavaScript engine. It renders cross-platform support to help the developers test and debug their code within a virtual domain irrespective of their operating system. Thus, developers can now perform server-side and client-side scripting using the same language, JavaScript. 
+
+Front-end developers use JavaScript to build interactive website UI, but that only works on the client-side or web browser. Node.js brings all the capabilities to JavaScript required for using it on back-end development, the server-side part of a web app architecture, and the serverless one. 
+<br>
+How Does Node.js Work?
+Node.js works on a 'single-threaded event loop' model. That means it can respond to concurrent requests from a single thread while dismissing the requirements of blocking it for one client request only. Whenever this framework receives an incoming request, it is placed in the event queue first, and then the processing starts. Now two instances can happen. 
+
+If the client request doesn't require any blocking I/O (Input/Output), it will be processed instantly, and the response will be sent back to the source. 
+
+When the request needs some blocking I/O operations, i.e., accessing the database or communicating with the external services, it first picks a thread from the internal thread pool and assigns the request to that thread. Now that particular thread will first process the request by performing the required blocking I/O operations. Then, it will prepare the response and send it back to the event loop to send it to the client finally. 
+
+Thus, Node.js can serve multiple client requests parallelly by placing them in the event queue and getting each of them processed through the event loop. That’s why you experience faster performance while working in this lightweight environment than using any multi-threaded request-response architecture like HTML, ASP.NET, Ajax, etc.  
+
+Node.js comes with a package manager, npm. It works as an index of the libraries created by the Node.js developers' community. These packages are easily shared, modified, and imported by other projects. Yes, the npm registry hosts over 1,000,000 open-source packages that provide optimal solutions that make developing new projects easier and improve the old ones at the same time. 
+
+Hence, you can use Node.js for easy web application developments. If you want more streamlined experience, you can change the source code of this open-source runtime environment and use it on your system. Sign up for our Java full-stack developer course to learn everything about this versatile platform and specialize in this single programming language, JavaScript, for front-end and back-end development. 
+<br>
+Now, let’s start with how to run Node.js on different operating systems. 
+
+How to Install Node.js on Windows?
+To install Node.js on your Windows PC, you need to first download the Windows Installer (.msi) package from its official website. This package contains all the files required for installing, updating, and modifying the downloaded Node.js version as per your preferences. So, check out the below steps to learn how to start Node.js and work seamlessly with it on your PC. 
+
+Note: The .msi package contains npm (Node.js package manager) also. Thus, you don't have to install npm separately on your PC. 
+
+System Requirements 
+<br>
+Windows 10 OS
+4 GB RAM
+10 GB free storage
+First, click here to visit the Node.js official website. 
+Next, navigate to Windows Installer (.msi) and download either the 32-bit or 64-bit version according to the architecture of your PC. 
+Now, double-click on this .msi setup file to start with the installation. 
+On the Node.js Setup window, check the box next to I accept the terms in the License Agreement. 
+Then, hit the Next button. 
+Browse and select the path now where you want to install Node.js locally and click Next. 
+On the Custom Setup window, make changes if you have any preference; if not, continue by clicking the Next button. 
+If you want to automatically install necessary tools for native modules from Node.js, check the box on this screen and click Next. 
+Finally, Node.js will prepare the installation; click the Install button on the Ready to install Node.js window. 
+Now, Node.js will be installed on your system within a few minutes; click the Finish button to close the installer. 
+You can verify the installation by running the below command in Command Prompt as an administrator, </p>
+
+
+<div class="article-btn">
+<button class="button" id="paras" style="visibility: hidden;">continue</button>
+</div>
+
+  </div>
+
+
+  <script>
+    const para = document.getElementById("para");
+
+function myMeessage() {
+  para.innerHTML = "Scroll Down & click on Continue button for  your destination link";
+  console.log("message appeared");
+}
+setTimeout(myMeessage, 1000);
+
+
+const paras = document.getElementById("paras");
+function myMessage() {
+  paras.style.visibility ='visible';
+}
+setTimeout(myMessage, 1000);
+  </script>
+</body>
+</html>
